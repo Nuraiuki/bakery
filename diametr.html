@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог тортов</title>
+    <style>
+        /* Стиль ссылок и тортов (оставляем стили из предыдущего ответа) */
+        body {
+            background-color: rgb(180, 119, 7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Добавляем стили для выбора диаметра */
+        .cake-container {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .cake {
+            margin: 10px;
+            vertical-align: top;
+        }
+
+        .cake a {
+            text-decoration: none;
+            color: #007bff;
+            border: 2px solid #007bff;
+            padding: 5px 10px;
+            margin-top: 5px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        /* Стили для выбора диаметра */
+        .diameter-selector {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Стили для кнопки "Купить" */
+        .buy-button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <a align="middle" href="frametop.html"><img src="стрелка.png" border="0" height="100" width="100"></a>
+    <h1 class="aligncenter">Каталог</h1>
+
+    <div class="cake-container">
+        <div class="cake">
+            <img src="торт1.jpg" alt="" class="round">
+            <p>
+                <a href="forma.html">Купить</a> |
+                <a href="подробнее.html">Подробнее</a>
+            </p>
+            <!-- Добавляем выбор диаметра и кнопку "Купить" -->
+            <div class="diameter-selector">
+                <label for="cake1-diameter">Выберите диаметр:</label>
+                <select id="cake1-diameter">
+                    <option value="20">20 см</option>
+                    <option value="25">25 см</option>
+                    <option value="30">30 см</option>
+                </select>
+            </div>
+            <p class="price">Цена: <span id="cake1-price">1000</span> руб.</p>
+            <button class="buy-button">Купить</button>
+        </div>
+
+        <!-- Добавьте остальные торты по аналогии -->
+    </div>
+</body>
+</html>

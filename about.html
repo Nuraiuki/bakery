@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог тортов</title>
+    <style>
+        .alignleft{
+    align-items: flex-start;
+}
+
+        body {
+            background-image: url('фон.jpg'); /* Путь к вашей фотографии */
+           
+            background-position: center center; /* Центрировать фото по горизонтали и вертикали */
+            background-size: cover;
+            
+            margin: 0;
+            padding: 0;
+            display: flex;  
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        .catalog {
+            display: flex;
+            flex-wrap: wrap; /* Разрешить перенос элементов на новую строку */
+            justify-content: center;
+            gap: 20px;
+           
+    width:1000px;
+    height: auto;   
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
+        }
+
+        .round {
+            margin-left: 20px;
+    text-align: center;
+
+border-radius: 40px;
+    height: 420px;
+    width: 270px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    position: relative;
+   
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+     }
+
+        .round img {
+         
+            width: 90%; /* Сделать изображение 100% ширины контейнера */
+    height: 60%; /* Сохранить соотношение сторон оригинальных изображений */
+    border-radius: 100%;
+    border: 4px solid #000000;
+
+
+
+    
+        }
+
+ 
+
+/* Добавляем фоновое изображение на ::before псевдо-элемент */
+
+
+/* При наведении на .round, увеличиваем размер и показываем второе фото */
+.round:hover {
+    transform: scale(1.1);
+ 
+    
+}
+
+.round img:hover {
+
+    border: 4px solid  #ffffff;
+    opacity: 1;
+    
+}
+
+.round:hover::after {
+    opacity: 1;
+}
+
+
+
+
+
+    
+        p { 
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #232322;
+            border: 2px solid #939292; /* Добавляем рамку */
+                    
+            padding: 5px 10px; /* Отступы внутри рамки */
+            display: inline-block; /* Делаем ссылки блочными элементами */
+            border-radius: 10px; /* Скругляем углы рамки */
+            background-color: #eaeaea;
+        }
+
+        a:hover {   
+            box-shadow: 0 0 7px #b4b386;
+    color: #dec769;
+    border-color: #e9e7df;
+            
+            background-color: #e9e7e7;
+            color: #e3c68a; /* Новый цвет ссылки при наведении курсора */
+            border: 2px solid #f9f7f2; /* Добавляем рамку */
+            border-radius: 10px;
+            font-weight: bold; 
+        }
+
+
+
+
+
+.price {
+    font-size: 18px; /* Adjust font size as needed */
+    margin-bottom: 1%; /* Space between price and buttons */
+}
+.about{
+    font-size: 20px; /* Adjust font size as needed */
+    margin-bottom: 5px; /* Space between price and buttons */
+
+}
+
+.buttons {
+    margin-top: 3px; /* Space between buttons and price */
+}   
+
+
+
+    
+
+.top-menu {
+    display: flex;
+            flex-wrap: wrap; /* Разрешить перенос элементов на новую строку */
+            justify-content: center;
+            gap: 20px;
+            border: 3px solid rgb(208, 177, 108); /* Общая рамка для всех фотографий */
+    border-radius: 30px; /* Радиус скругления рамки */
+    width: 1000px;
+    height: auto;   
+    background-color: rgb(182, 173, 139); /* Цвет фона блока */
+color:rgb(255, 255, 255);
+}
+          
+        
+
+        ul.hr {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        ul.hr li {
+            margin-right: 30px;
+        }
+
+     
+
+        a.icon:hover {
+            text-decoration: none;
+            color: #e9b20c;
+            border: 2px solid #585858; /* Add border */
+            /* Increase padding to make buttons larger */
+            display: inline-block;
+            border-radius: 5px;
+            border-color: #e9b20c;
+
+        }
+
+        a.icon{
+            display: flex;
+            align-items: right;
+            right: 0;
+     
+            text-decoration: none;
+            color: #e9b20c;
+     
+            display: inline-block;
+
+            
+
+            
+            
+            
+        }
+
+        a.text-link {
+
+    text-decoration: none;
+    color: #e9b20c;
+   
+    font-size: 20px; /* Adjust font size */
+}
+
+a.text-link:hover {
+    box-shadow: 0 0 7px #b4b386;
+    color: #e9e7df;     
+    border-color: #e9e7df;
+    text-decoration: none;
+    color: #282828;
+}
+
+  
+
+    </style>
+</head>
+<body>
+    <a href="frametop.html" class="alignleft">вернуться на главную</a>
+    <h1 class="top-menu"><strong><font size='40'>Н О В И Н К И </font></strong></h1>
+
+    <div class="catalog">
+    
+    
+        <div class="round" class="photo-container">
+            <img src="t2.jpg" alt="">
+            <span class="about">"Sweet Serenity Cake"</span>
+            <span class="price">6000 тенге </span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="cake11.html">Подробнее</a>
+            </div>
+        </div>
+    
+        <div class="round" class="photo-container">
+            <img src="cr5photo_5244601698226392677_x.jpg" alt="">
+            <span class="about"> Миндальный круассан</span>
+            <span class="price">700 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="cr3.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" class="photo-container">
+            <img src="t4.jpg" alt="">
+            <span class="about">"Incredible imagination"</span>
+            <span class="price">6500 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="cakespider.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round"  class="photo-container">
+            <img src="cr9photo_5246882222781354081_y.jpg" alt="">
+            <span class="about">А-ля круассан</span>
+                    <span class="price">2290 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="cr7.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" >
+            <img src="bu2.jpg" alt="">
+            <span class="about">Булочки плетенки с маком и корицей</span>
+            <span class="price">970 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="b7.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" >
+            <img src="de1.jpg" alt="">
+            <span class="about">Слойка с ягодами</span>
+            <span class="price">600 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="d1.html">Подробнее</a>
+            </div>
+        </div>

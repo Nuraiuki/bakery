@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подробнее о "Капкейк"</title>
+    <style>
+a {
+    text-decoration: none;
+    color: #e9b20c;
+    border: 2px solid #585858;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 6px;
+    border-color: #e9b20c;
+    font-size: 25px;
+}
+
+a:hover {
+    box-shadow: 0 0 7px #b4b386;
+    color: #e9e7df;
+    border-color: #e9e7df;
+}
+
+.back {
+    text-decoration: none;
+    color: #e9b20c;
+    border: 2px solid #585858;
+    padding: 5px 20px;
+    display: inline-block;
+    border-radius: 6px;
+    border-color: #e9b20c;
+    font-size: 25px;
+}
+
+.back:hover {
+    box-shadow: 0 0 7px #b4b386;
+    color: #e9e7df;
+    border-color: #e9e7df;
+}
+
+/* Define styles for the cake details section */
+.cake-details {
+    display: flex;
+    align-items: center;
+}
+
+.cake-details .cake-image {
+    flex: 1;
+    padding-left: 10%;
+    margin: 0;
+}
+
+.cake-details .cake-info {
+    flex: 1;
+    margin: 0;
+}
+
+.cake-details .cake-info h1 {
+    font-size: 30px;
+}
+
+.cake-details .cake-info h3 {
+    font-size: 22px;
+}
+
+.cake-details .cake-info p {
+    font-size: 18px;
+}
+
+/* Define styles for the cake image */
+.round {
+    position: relative;
+    border-radius: 100px;
+    border: 2px solid rgb(68, 1, 14);
+    box-shadow: 0 0 7px #666;
+    height: 450px;
+    width: 450px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* Добавляем фоновое изображение на ::before псевдо-элемент */
+.round::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('de1.jpg'); /* Путь к изображению десерта */
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* При наведении на .round, увеличиваем размер и показываем второе фото */
+.round:hover {
+    transform: scale(1.1);
+}
+
+.round:hover::after {
+    opacity: 1;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+p {max-width: 70%; /* Максимальная ширина контейнера, в пределах которой будет текст */
+word-wrap: break-word;
+    font-size: 2.5em;
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+}    </style>
+</head>
+<body>
+    <a href="menu.html" class="back">назад</a>
+
+    <div class="cake-details">
+        <div class="cake-image">
+            <img src="d4.jpg" alt="Капкейк" class="round">
+        </div>
+        <div class="cake-info">
+            <h1>Капкейк</h1>
+            <h3>Цена:</h3>
+            <p>600 тенге</p>
+
+            <h3>Количество:</h3>
+            <p>1</p>
+         
+            <h3>Калории:</h3>
+            <p>300 ккал/100 г</p>
+
+            <h3>Вес:</h3>
+            <p>180 г</p>
+            
+            <a href="forma.html">Заказать</a>
+
+            <p>Капкейк - это небольшой кекс, приготовленный с любовью. Он обычно украшен кремом и разнообразными украшениями, делая его идеальным десертом для утоления сладкого голода.</p>
+        </div>
+    </div>
+</body>
+</html>

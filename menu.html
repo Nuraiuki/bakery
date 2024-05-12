@@ -1,0 +1,563 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Каталог тортов</title>
+        <style>
+            .alignleft{
+        align-items: flex-start;
+    }
+
+    body {
+    background-image: url('фон.jpg');
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    border: 3px solid rgb(208, 177, 108);
+    border-radius: 30px;
+    width: 1000px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url('фон.jpg');
+}
+
+.round {
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid rgb(208, 177, 108);
+    box-shadow: 0 0 7px #666;
+    height: 420px;
+    width: 270px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.round img {
+    width: 90%;
+    height: 65%;
+    border-radius: 30px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #232322;
+    border: 2px solid #939292;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #eaeaea;
+}
+
+a:hover {
+    box-shadow: 0 0 7px #b4b386;
+    color: #dec769;
+    border-color: #e9e7df;
+    background-color: #e9e7e7;
+    color: #e3c68a;
+    border: 2px solid #f9f7f2;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 18px;
+    margin-bottom: 1%;
+}
+
+.about {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.buttons {
+    margin-top: 3px;
+}
+
+table {
+    display: flex;
+    width: 100%;
+    border-collapse: collapse;
+    display: flex;
+    height: 5%;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+td a {
+    width: 230px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 3px solid rgb(208, 177, 108);
+    font-size: 30px;
+}
+
+td a {
+    text-decoration: none;
+    color: #232322;
+}
+
+.top-bar {
+    margin-top: 3%;
+    border: 2px solid #e9b20c;
+    margin-right: 30px;
+    padding-right: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.top-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    border: 3px solid rgb(208, 177, 108);
+    border-radius: 30px;
+    width: 1000px;
+    height: auto;
+    background-color: rgb(182, 173, 139);
+    color: rgb(255, 255, 255);
+}
+
+ul.hr {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+ul.hr li {
+    margin-right: 10px;
+    align-items: center;
+}
+
+a.icon:hover {
+    text-decoration: none;
+    color: #e9b20c;
+    border: 2px solid #585858;
+    display: inline-block;
+    border-radius: 5px;
+    border-color: #e9b20c;
+}
+
+a.icon {
+    display: flex;
+    align-items: right;
+    right: 0;
+    text-decoration: none;
+    color: #e9b20c;
+    display: inline-block;
+}
+
+a.text-link {
+    text-decoration: none;
+    color: #e9b20c;
+    font-size: 20px;
+}
+
+a.text-link:hover {
+    box-shadow: 0 0 7px #b4b386;
+    color: #e9e7df;
+    border-color: #e9e7df;
+    text-decoration: none;
+    color: #282828;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <a href="frametop.html" class="alignleft">вернуться на главную</a>
+        <h1 class="top-menu"><strong><font size='40'>M E N U</font></strong></h1>
+        <table>
+            <tr>
+                <td><a href="#торт">торт</a></td>
+                
+                <td><a href="#круассаны">круассан</a></td>
+                <td><a href="#выпечка">выпечка</a></td>
+                <td><a href="#десерты">десерты</a></td>
+            
+            </tr>
+        </table>
+        <div class="catalog">
+            <div class="round" id="торт"  class="photo-container">
+                <img src="t7.jpg"  alt="">
+                <span class="about">"Red Velvet Indulgence"</span>
+                <span class="price">7000 тенге</span>
+                <div class="buttons">
+                    <a href="forma.html">Купить</a> | <a href="cake9.html">Подробнее</a>
+                </div>
+            </div>
+            
+            <div class="round" class="photo-container">
+                <img src="t9.jpg"   alt="">
+                <span class="about">"Sweet Skyline Cake"</span>
+                <span class="price">6000 тенге</span>
+                <div class="buttons">
+                    <a href="forma.html">Купить</a> | <a href="cake8.html">Подробнее</a>
+                </div>
+            </div>
+
+            <div class="round" class="photo-container">
+                <img src="t4.jpg" alt="">
+                <span class="about">"Incredible imagination"</span>
+                <span class="price">6500 тенге</span>
+                <div class="buttons">
+                    <a href="forma.html">Купить</a> | <a href="cake4.html">Подробнее</a>
+                </div>
+            </div>
+        
+               
+        <div class="round" class="photo-container">
+            <img src="t6.jpg" alt="">
+            <span class="about">"Starry Delight"</span>
+            <span class="price">6500 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="cake6.html">Подробнее</a>
+            </div>
+        </div>
+          
+        <div class="round" class="photo-container">
+
+            <img src="t3.jpg" alt="">
+            <span class="about">"Vanilla Dream Cake"</span>
+            <span class="price">5000 тенге</span>
+            
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="1vanilla-dream-cake.html">Подробнее</a>
+            </div>
+        </div>
+
+           
+     
+            <div class="round" class="photo-container">
+                <img src="t1.jpg" alt="">
+                <span class="about">"Always forever"</span>
+                <span class="price">6000 тенге</span>
+                <div class="buttons">
+                    <a href="forma.html">Купить</a> | <a href="cake5.html">Подробнее</a>
+                </div>
+            </div>
+    
+ 
+    
+        <div class="round" class="photo-container">
+            <img src="t8.jpg" alt="">
+            <span class="about">"Tenderness"</span>
+            <span class="price">7000 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="cake7.html">Подробнее</a>
+            </div>
+        </div>
+        
+        <div class="round" class="photo-container">
+            <img src="t2.jpg" alt="">
+            <span class="about">"Sweet Serenity Cake"</span>
+            <span class="price">6000 тенге </span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="cake2.html">Подробнее</a>
+            </div>
+        </div>
+
+    
+
+        <div class="round" class="photo-container">
+            <img src="t5.jpg" alt="">
+            <span class="about">"Chocolate Euphoria Treat"</span>
+            <span class="price">5000 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="cake3.html">Подробнее</a>
+            </div>
+        </div>
+
+       
+        <div class="round"  class="photo-container" id="круассаны">
+            <img src="cr4.jpg" alt="">
+            <span class="about">Круассан с шоколадом</span>
+            <span class="price">700 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="cr1.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round"  class="photo-container">
+            <img src="cr7photo_5244601698226392675_x.jpg" alt="">
+            <span class="about">Круассан класичесский </span>
+            <span class="price">300 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="cr2.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" class="photo-container">
+            <img src="cr5photo_5244601698226392677_x.jpg" alt="">
+            <span class="about"> Миндальный круассан</span>
+            <span class="price">700 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="cr3.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round"  class="photo-container">
+            <img src="cr6photo_5244601698226392676_x.jpg" alt="">
+            <span class="about">Круассан с ягодами</span>
+            <span class="price">1890 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="cr4.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" class="photo-container" >
+            <img src="cr15.jpg" alt="">
+            <span class="about">Круассан с говядиной</span>
+            <span class="price">1890 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="cr5.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" class="photo-container" >
+            <img src="cr1.jpg" alt="">
+            <span class="about">Симпл круассан</span>
+            <span class="price">1290 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="cr6.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round"  class="photo-container">
+            <img src="cr9photo_5246882222781354081_y.jpg" alt="">
+            <span class="about">А-ля круассан</span>
+                    <span class="price">2290 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="cr7.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round"  class="photo-container">
+            <img src="cr3.jpg" alt="">
+            <span class="about">Круассан с авокадо и яйцом</span>
+            <span class="price">1990 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="cr8.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round"  class="photo-container">
+            <img src="cr8photo_5246882222781354083_x.jpg" alt="">
+            <span class="about">Круассан  с лососем</span>
+            <span class="price">1990 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="cr9.html">Подробнее</a>
+            </div>
+        </div>
+
+        <div class="round" id="выпечка" class="photo-container">
+            <img src="bu9.png" alt="">
+            <span class="about">Бауырсак</span>
+            <span class="price">1200 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="b1.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round"  class="photo-container">
+            <img src="bu1.jpg" alt="">
+            <span class="about">Булочка из слоенного теста с заварным кремом</span>
+            <span class="price">1000 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="b2.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round">
+            <img src="bu3.jpg" alt="">
+            <span class="about">Булочки «плюшки»</span>
+            <span class="price">950 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="b3.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" >
+            <img src="bu4.jpg" alt="">
+            <span class="about">Булочки плетенки с орехом</span>
+            <span class="price">980 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="b4.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" >
+            <img src="bu5.jpg" alt="">
+            <span class="about">Яблочные булочки</span>
+            <span class="price">920 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="b5.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" >
+            <img src="busm.jpeg" alt="">
+            <span class="about">Булочки «сметанник»</span>
+            <span class="price">950 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="b6.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" >
+            <img src="bu2.jpg" alt="">
+            <span class="about">Булочки плетенки с маком и корицей</span>
+            <span class="price">970 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="b7.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" >
+            <img src="bush.jpeg" alt="">
+            <span class="about">Кекс
+                </span>
+            <span class="price">990 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="b8.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" >
+            <img src="bu6.jpg" alt="">
+            <span class="about">Булочка «синнабон»</span>
+            <span class="price">1290 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="b9.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" id="десерты">
+            <img src="de1.jpg" alt="">
+            <span class="about">Слойка с ягодами</span>
+            <span class="price">600 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="d1.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" >
+            <img src="de2.jpg" alt="">
+            <span class="about">Тайский десерт </span>
+            <span class="price">1000 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="d2.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round">
+            <img src="d3.jpg" alt="">
+            <span class="about">Тарт с ягодами</span>
+            <span class="price">1590 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="d3.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" >
+            <img src="d5.jpg" alt="">
+            <span class="about">Шоколадный рулет</span>
+            <span class="price">1390 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="d4.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" >
+            <img src="d4.jpg" alt="">
+            <span class="about">Капкейк</span>
+            <span class="price">600 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="d5.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" >
+            <img src="d6.jpg" alt="">
+            <span class="about">Орео трайфл</span>
+            <span class="price">1200 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="d6.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" >
+            <img src="d7.jpg" alt="">
+            <span class="about"> Шоко эклеры</span>
+            <span class="price">890 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="d7.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" >
+            <img src="d8.jpg" alt="">
+            <span class="about">Тарталетки с начинками</span>
+            <span class="price">1290 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="d8.html">Подробнее</a>
+            </div>
+        </div>
+        <div class="round" >
+            <img src="d9.jpg" alt="">
+            <span class="about">Мини тортик</span>
+            <span class="price">2290 тенге</span>
+            <div class="buttons">
+                <a href="forma.html">Купить</a> | <a href="d9.html">Подробнее</a>
+            </div>
+        </div>
+        </div>
+
+        </div>
+
+
+
+
+
+
+   
+    </div>
+
+
+    <div class="top-bar">
+        <ul class="hr">
+            <img src="ad.png" align="left" height="50px" width="80px">
+            <li><a class="text-link" href="frametop.html">Главная</a></li>
+            <li><a class="text-link" href="menu.html">Каталог</a></li>
+<li><a class="text-link" href="about.html">О нас</a></li>
+
+<li><a class="text-link" href="formamain.htm">Заказать</a></li>
+<li><a href="tel:+87710504939" class="text-link" class="phone-link ">8 (771) 050-4939</a>  </li>
+
+
+<div class="social-icons">
+               
+    <a class="icon" href="https://www.instagram.com/"><img src="5340248_ig_instagram_photo_icon.png" alt="Instagram" height="30px" width="30px"></a>
+<a class="icon" href="https://api.whatsapp.com/send?phone=87710504939"><img src="what.png" alt="whatsapp" height="30px" width="30px"></a>
+<a class="icon" href="https://t.me/babochka301" ><img src="7693324_telegram_social media_logo_messenger_icon.png" alt="Telegram" height="30px" width="30px"></a>
+<a class="icon" href="mailto:nuraiym.kuandyk@gmail.com"><img src="134146_mail_email_icon.png" alt="email" height="30px" width="30px"></a>
+</div>
+
+
+
+
+
+
+        </ul>
+    </div>
+
+
+    
+</body>
+</html>
+
+
+

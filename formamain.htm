@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ</title>
+    <style>
+     body {
+    background-color: rgb(145, 137, 104);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+table {
+    background-color: rgb(222, 222, 221);
+    border-spacing: 10px;
+    border-collapse: separate;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 40px;
+}
+
+caption {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+td {
+    padding: 6px;
+    vertical-align: middle;
+    position: relative;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+input[type="submit"],
+input[type="reset"],
+.button {
+    background-color: #e9b20c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s, border-color 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.button:hover {
+    background-color: #b4b386;
+    color: #e9e7df;
+    box-shadow: 0 0 7px #b4b386;
+}
+
+.city-select {
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <form name="forma1">
+        <table>
+            <caption>Оформить заказ</caption>
+            <tr>
+                <td align="right" valign="middle">Имя</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td align="right" valign="middle">Телефонный номер</td>
+                <td><input type="tel" name="phone" pattern="[0-9]{5,12}" inputmode="numeric" required></td>
+               
+            </tr>
+            <tr>
+                <td>
+                    <select id="city" class="city-select" name="product" required>
+                        <option value="" disabled selected>Выберите продукт</option>
+                        <option value="торт">Торт</option>
+                        <option value="выпечка">Выпечка</option>
+                        <option value="круассан">Круассан</option>
+                        <option value="десерт">Десерт</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td align="right" valign="middle">Ваши пожелания</td>
+                <td><textarea name="wishes" cols="30" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td align="right" colspan="2">
+                    <input type="submit" name="submit" value="Отправить">
+                    <input type="reset" name="reset" value="Очистить">
+                    <a class="button" href="frametop.html">Назад</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

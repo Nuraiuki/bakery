@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подробнее о торте</title>
+    <style>
+
+a{
+
+text-decoration: none;
+color: #e9b20c;
+border: 2px solid #585858; /* Add border */
+padding: 5px 20px; /* Increase padding to make buttons larger */
+display: inline-block;
+border-radius: 6px;
+border-color: #e9b20c;
+font-size: 25px; /* Adjust font size */
+}
+
+a:hover {
+box-shadow: 0 0 7px #b4b386;
+color: #e9e7df;
+border-color: #e9e7df;
+}
+        .aligncenter {
+            text-align: center;
+        }
+
+        .cake-details {
+            display: flex;
+            align-items: center;
+            
+        }
+
+        .cake-details .cake-image {
+            flex: 1;
+            padding: 40px;
+            margin-left: 30px       ;
+            margin-right: 30px  ;
+        }
+
+        .cake-details .cake-info {
+            flex: 1;
+            padding: 10px ;
+        }
+
+        .cake-details .cake-info h1 {
+            font-size: 30px;
+            
+        }
+        .cake-details .cake-info h3 {
+            font-size: 22px;
+            
+        }
+
+        .cake-details .cake-info p {
+            font-size: 18px;
+        }
+
+        .round {
+
+            border-radius: 100px;
+            border: 2px solid rgb(68, 1, 14);
+            box-shadow: 0 0 7px #666;
+            height: 450px;
+            width: 450px;
+        }
+
+     
+    </style>
+</head>
+<body>
+    <a href="menu.html "  >назад </a>
+
+
+   
+    <div class="cake-details">
+        <div class="cake-image">
+            <img src="пек.jpeg" alt="" class="round">
+        </div>
+        <div class="cake-info">
+            <h1>Тортик 1</h1>
+            <td> диаметр:</td>
+            <td>
+                <input type="radio" name="diameter" value="18">  18 см </td>
+                <td>
+                <input type="radio" name="diameter" value="20">  20 см </td> 
+                <td>
+                    <input type="radio" name="diameter" value="20">  22 см </td> 
+             <h3>Калории:</h3>   <p> 250 ккал</p>     
+            
+            <h3>Вес:</h3> 
+            <p> 300 г</p>
+            <a href="forma.html" >Заказать</a>
+        </div>
+    </div>
+</body>
+</html>
